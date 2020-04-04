@@ -2,7 +2,7 @@ public class Circle extends Shape {
     private int radius;
 
     public Circle() {
-        radius = getGenerator().getRandomNum(30);
+        radius = new RandomGenerator().getRandomNum(30);
     }
 
     public double getSquare() {

@@ -3,7 +3,7 @@ public class Triangle extends Shape {
     private int sideB;
 
     public Triangle() {
-        RandomGenerator generator = getGenerator();
+        RandomGenerator generator = new RandomGenerator();
         sideA = generator.getRandomNum(20);
         sideB = generator.getRandomNum(20);
     }

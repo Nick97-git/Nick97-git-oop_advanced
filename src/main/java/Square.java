@@ -2,7 +2,7 @@ public class Square extends Shape {
     private int side;
 
     public Square() {
-        side = getGenerator().getRandomNum(20);
+        side = new RandomGenerator().getRandomNum(20);
     }
 
     public double getSquare() {
