@@ -6,7 +6,7 @@ public class Trapeze extends Shape {
     public Trapeze() {
         RandomGenerator generator = getGenerator();
         sideA = generator.getRandomNum(20);
-        sideB = sideA + 10;
+        sideB = sideA + 15;
         height = generator.getRandomNum(20);
     }
 
