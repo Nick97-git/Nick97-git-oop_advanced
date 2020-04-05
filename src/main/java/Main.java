@@ -10,7 +10,7 @@ public class Main {
         shapes.add(new Trapeze());
         shapes.add(new Circle());
         RandomGenerator generator = new RandomGenerator();
-        for (int i = 0; i < generator.getRandomNum(100); i++) {
+        for (int i = 0; i < generator.getRandomNum(100) + 1; i++) {
             int index = generator.getRandomNum(shapes.size());
             Shape generatedShape = shapes.get(index).createShape();
             System.out.println(generatedShape.toString());
