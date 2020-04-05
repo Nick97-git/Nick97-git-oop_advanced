@@ -1,5 +1,11 @@
 import java.util.ArrayList;
 import java.util.List;
+import shapes.Circle;
+import shapes.RandomGenerator;
+import shapes.Shape;
+import shapes.Square;
+import shapes.Trapeze;
+import shapes.Triangle;
 
 public class Main {
 

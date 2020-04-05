@@ -1,33 +1,37 @@
-public class Triangle extends Shape {
+package shapes;
+
+public class Trapeze extends Shape {
     private int sideA;
     private int sideB;
+    private int height;
 
-    public Triangle() {
+    public Trapeze() {
         RandomGenerator generator = new RandomGenerator();
         sideA = generator.getRandomNum(20);
-        sideB = generator.getRandomNum(20);
+        sideB = sideA + 15;
+        height = generator.getRandomNum(20);
     }
 
     public double getSquare() {
-        return (double) (sideA * sideB) / 2;
+        return (double) (height * (sideA + sideB)) / 2;
     }
 
     public String getDraw() {
-        return "треугольник";
+        return "трапеция";
     }
 
-    double getHypotenuse() {
-        return Math.sqrt(sideA * sideA + sideB * sideB);
+    double getMiddleLine() {
+        return (double) (sideA + sideB) / 2;
     }
 
     public Shape createShape() {
-        return new Triangle();
+        return new Trapeze();
     }
 
     @Override
     public String toString() {
         return "Фигура: " + getDraw() + ", площадь: " + getSquare()
-                + " кв. ед., длина гипотенузы: " + getHypotenuse()
+                + " кв. ед., длина средней линии: " + getMiddleLine()
                 + " ед., цвет: " + getColor();
     }
 }
