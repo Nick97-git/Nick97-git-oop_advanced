@@ -12,7 +12,7 @@ public class Trapeze extends Shape {
         height = generator.getRandomNum(20);
     }
 
-    public double getSquare() {
+    public double getArea() {
         return (double) (height * (sideA + sideB)) / 2;
     }
 
@@ -30,7 +30,7 @@ public class Trapeze extends Shape {
 
     @Override
     public String toString() {
-        return "Фигура: " + getDraw() + ", площадь: " + getSquare()
+        return "Фигура: " + getDraw() + ", площадь: " + getArea()
                 + " кв. ед., длина средней линии: " + getMiddleLine()
                 + " ед., цвет: " + getColor();
     }

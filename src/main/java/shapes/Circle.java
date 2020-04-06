@@ -7,7 +7,7 @@ public class Circle extends Shape {
         radius = new RandomGenerator().getRandomNum(30);
     }
 
-    public double getSquare() {
+    public double getArea() {
         return Math.PI * radius * radius;
     }
 
@@ -25,7 +25,7 @@ public class Circle extends Shape {
 
     @Override
     public String toString() {
-        return "Фигура: " + getDraw() + ", площадь: " + getSquare()
+        return "Фигура: " + getDraw() + ", площадь: " + getArea()
                 + " кв. ед., длина круга: " + getLengthOfCircle()
                 + " ед., цвет: " + getColor();
     }

@@ -10,7 +10,7 @@ public class Triangle extends Shape {
         sideB = generator.getRandomNum(20);
     }
 
-    public double getSquare() {
+    public double getArea() {
         return (double) (sideA * sideB) / 2;
     }
 
@@ -28,7 +28,7 @@ public class Triangle extends Shape {
 
     @Override
     public String toString() {
-        return "Фигура: " + getDraw() + ", площадь: " + getSquare()
+        return "Фигура: " + getDraw() + ", площадь: " + getArea()
                 + " кв. ед., длина гипотенузы: " + getHypotenuse()
                 + " ед., цвет: " + getColor();
     }

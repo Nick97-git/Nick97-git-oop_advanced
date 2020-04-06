@@ -6,7 +6,7 @@ public abstract class Shape {
         return new RandomGenerator().getRandomColour();
     }
 
-    public abstract double getSquare();
+    public abstract double getArea();
 
     public abstract String getDraw();
 
